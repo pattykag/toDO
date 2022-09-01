@@ -18,5 +18,5 @@ service api {
     //         to    : 'user'
     //     }
     // ])
-    entity ToDos as projection on my.ToDos;
+    entity Notes as projection on my.Notes;
 }
