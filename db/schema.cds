@@ -5,16 +5,17 @@ using {
 
 namespace todoNamespace;
 
-entity ToDos : cuid {
-    title     : String;
-    todoDate  : Date;
-    content   : String;
+entity Notes : cuid {
+    title     : String(100);
+    date      : Date;
+    text      : String;
     completed : Boolean;
-    category  : Association to Categories;
+    type      : Association to Type;
 }
 
 @cds.autoexpose
-entity Categories {
-    key ID       : String(2);
-        category : String(15);
+@readonly
+entity Type {
+    key ID   : Integer;
+        type : String(15);
 }

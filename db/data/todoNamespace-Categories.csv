@@ -1,4 +1,4 @@
-ID,category
-UR,Urgente
-NE,Neutral
-NO,Ninguna
+ID,type
+1,Miscellaneous
+2,Reminder
+3,Critical
